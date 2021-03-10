@@ -1,8 +1,9 @@
 # devsecops-training-serverless
 
-Set up AWS cli
+Set up AWS environment variables
 
-    awscli config
+    export AWS_ACCESS_KEY_ID=<your-key-here>
+    export AWS_SECRET_ACCESS_KEY=<your-secret-key-here>
 
 Create Serverless Project
 
@@ -44,3 +45,7 @@ Add the following to the serverless.yml that was created:
             RuleViolation:
               Enabled:        true                    # default is true
               FailThreshold:  None                    # default is None
+
+Deploy lambda package
+
+    sls deploy
