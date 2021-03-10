@@ -1,8 +1,16 @@
 # devsecops-training-serverless
 
+Set up AWS cli
+
+    awscli config
+
+Create Serverless Project
+
     serverless create --template aws-nodejs --path lambda-cicd
     cd lambda-cicd
     npm init
+
+Install CloudGuard Plugin
 
     npm install -D https://artifactory.app.protego.io/cloudguard-serverless-plugin.tgz
 
